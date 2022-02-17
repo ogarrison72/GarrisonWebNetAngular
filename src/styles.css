@@ -1,0 +1,106 @@
+@import "./reset.css";
+
+/* Variables */
+:root{
+    --ultralight-background-color: #676767;
+    --light-background-color: #444;
+    --dark-background-color: #222;
+    --accent-background-color: #575757;
+
+    --light-shadow-color: rgba(0,0,0,0.5);
+    --dark-shadow-color: black;
+    --light-font-color: white;
+    --mid-font-color: #d5d5d5;
+    --dark-font-color: #b5b5b5;
+    --ultradark-font-color: #6c6c6c;
+    --accent-font-color: white;
+}
+
+/* Base styles */
+html {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    color: var(--dark-font-color);
+    background-color: var(--dark-background-color);
+    line-height: 1.5rem;
+}
+#main-nav{
+    background-color: var(--light-background-color);
+    filter: drop-shadow(0 2px 5px var(--dark-shadow-color));
+}
+#main-nav .navbar-brand{
+    text-decoration: none;
+    color: var(--mid-font-color);
+    margin: 0.25rem 0.25rem 0.25rem 1rem;
+    transition: color 1s;
+}
+#main-nav .navbar-brand:hover{
+    color: var(--light-font-color);
+}
+#main-nav .navbar-toggler-icon{
+    color: var(--mid-font-color);
+}
+#main-nav .nav-link{
+    text-decoration: none;
+    color: var(--mid-font-color);
+    background-color: transparent;
+    margin: 0 1rem;
+    padding: 0 0.25rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: color 0.5s;
+}
+#main-nav .nav-link:hover{
+    color: var(--light-background-color);
+    background-color: var(--light-font-color);
+    border-radius: 5px;
+}
+#main-nav .active{
+    border-radius: 5px;
+    background-color: var(--accent-background-color);
+}
+#main-nav .navbar-toggler{
+    border: none;
+}
+
+
+/* Mobile styles*/
+#main-nav .navbar-brand{
+    font-size: 2rem;
+}
+#main-nav .nav-item{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+
+/* Small tablet styles */
+@media screen and (min-width: 620px) {
+    #main-nav .navbar-brand{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    #main-nav .nav-item{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+}
+
+
+/* Large tablet and laptop styles */
+@media screen and (min-width: 992px) {
+    #main-nav .navbar-brand{
+        font-size: 3rem;
+    }
+    #main-nav .nav-item{
+        font-size: 1rem;
+    }
+}
+
+
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
+
+}

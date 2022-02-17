@@ -1,0 +1,118 @@
+/* Variables */
+
+
+/* Base styles */
+.container{
+    padding: 5% 5%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    color: #b5b5b523;
+    background-color: #b5b5b523;
+}
+.carousel-indicators [data-bs-target]{
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.photo {
+    /* width: 97%;
+    height: 98%; */
+    object-fit: contain;
+    border-radius: 10px;
+    border: 5px solid var(--dark-font-color);
+    /* filter: drop-shadow(5px 5px 5px var(--dark-shadow-color)); */
+}
+.description{
+    font-weight: 200;
+    /* font-family: "Architects Daughter", cursive; */
+}
+.description p {
+    text-align: center;
+    filter: drop-shadow(5px 5px 5px var(--dark-shadow-color));
+}
+.role{
+    font-style: italic;
+}
+
+
+
+
+
+
+
+/* Mobile styles */
+.container{
+    margin-top: 1rem;
+
+}
+.role{
+    font-size: 1.30rem;
+}
+.description{
+    line-height: 2rem;
+    font-size: 0.7rem;
+}
+
+
+/* Small tablet styles */
+@media screen and (min-width: 450px) {
+    .role{
+        font-size: 2rem;
+    }
+    .description{
+        line-height: 3.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin-top: 4rem;
+
+    }
+     .description{
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Large tablet and laptop styles */
+@media screen and (min-width: 960px) {
+    .role{
+        font-size: 2.5rem;
+    }
+    .description{
+        line-height: 3.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
+    .role{
+        font-size: 3rem;
+    }
+    .description{
+        line-height: 4.5rem;
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

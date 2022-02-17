@@ -1,0 +1,344 @@
+/* Variables */
+
+
+/* Base styles */
+.container{
+    margin-bottom: 5rem;
+}
+.section {
+    margin: 5rem auto 0 auto;
+}
+.section:nth-of-type(1) {
+    margin-top: 0rem;
+}
+.section-header {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-font-color);
+    background-color: var(--light-background-color);
+    border-radius: 5px;
+    filter: drop-shadow(3px 3px 10px var(--light-shadow-color));
+}
+.section-header span {
+    filter: drop-shadow(1px 1px 5px var(--dark-shadow-color));
+}
+.section hr {
+    margin: 1rem auto;
+    width: 95%;
+    border: 1px solid var(--ultralight-background-color);
+    filter: drop-shadow(3px 3px 5px var(--light-shadow-color));
+}
+.quote {
+    font-family: "Italiana", serif;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.blockquote{
+    font-weight: 900;
+    font-size: 1rem;
+}
+.blockquote-footer{
+    color: var(--ultradark-font-color);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+#profile-section h3 {
+    color: var(--light-font-color);
+}
+#profile-section h4 {
+    color: var(--mid-font-color);
+}
+#profile-section .photo-frame{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+#profile-section .profile-photo{
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid var(--light-background-color);
+    filter: drop-shadow(0 0 5px var(--light-shadow-color));
+}
+#profile-section .row {
+    margin-top: 5rem;
+}
+#profile-section .contact-links {
+    margin-top: 1rem;
+}
+#profile-section .button {
+    font-size: 0.6rem;
+    margin: 0 10px 0px 10px;
+    color: var(--mid-font-color);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+#profile-section .button:hover {
+    color: var(--light-font-color);
+}
+#profile-section .button svg{
+    width: 20px;
+    height: 20px;
+}
+#experience-section h3 {
+    color: var(--accent-font-color);
+    text-transform: uppercase;
+}
+#experience-section h4 {
+    color: var(--light-font-color);
+    font-weight: 700;
+}
+#experience-section h5 {
+    color: var(--light-font-color);
+    font-weight: 700;
+}
+#experience-section .aka {
+    font-style: italic;
+    font-size: 0.9em;
+}
+#experience-section ul li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#experience-section ul li .column {
+    flex: 1;
+}
+#experience-section ul li .column:nth-of-type(2) {
+    flex: 2.5;
+}
+#experience-section .bulleted {
+    padding: 0.25rem 0 0.5rem 2rem;
+    list-style-position: outside;
+    list-style-type: disc;
+}
+#experience-section .bulleted li {
+    display: list-item;
+}
+#experience-section .company-start {
+    margin: 2rem 0 0 0;
+}
+#experience-section .location {
+    color: var(--accent-font-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#experience-section .location a {
+    text-decoration: none;
+    color: var(--accent-font-color);
+}
+#abilities-section h3 {
+    color: var(--accent-font-color);
+    text-transform: uppercase;
+}
+#abilities-section h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--light-font-color);
+}
+#abilities-section .content {
+    margin: 0 1rem;
+}
+#abilities-section .content p {
+    margin: 0.5rem 0;
+}
+#abilities-section .content .abilities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#abilities-section .content .abilities span{
+    color: var(--dark-font-color);
+    background-color: var(--light-background-color);
+    border: 1px solid var(--light-background-color);
+    border-radius: 25px;
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+#abilities-section .content .abilities span:hover{
+    color: var(--dark-background-color);
+    background-color: var(--light-font-color);
+    border-color: var(--light-font-color);
+}
+#contact-section .content {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#contact-section a {
+    text-decoration: none;
+    color: var(--mid-font-color);
+    vertical-align: top;
+}
+#contact-section svg{
+    width: 24px;
+    height: 24px;
+    margin:5px;
+}
+.sectionNavbar{
+    visibility: hidden;
+    filter: drop-shadow(3px 3px 10px var(--light-shadow-color));
+}
+.sectionNavbar .list-group-item{
+    color: var(--mid-font-color);
+    background-color: var(--light-background-color);
+    transition: color 0.5s, background-color 0.5s;
+}
+.sectionNavbar .list-group-item:hover{
+    color: var(--dark-background-color);
+    background-color: var(--light-font-color);
+}
+
+
+
+/* Mobile styles */
+.section-header {
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.section {
+    padding-top: 2rem;
+}
+#profile-section h3 {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    letter-spacing: 1px;
+}
+#profile-section h4 {
+    font-size: 1.15rem;
+    padding: 0.5em 0;
+}
+#profile-section .profile-photo{
+    width: 200px;
+    height: 200px;
+}
+#experience-section h3 {
+    font-size: 1.75rem;
+    margin: 3rem 0 0.5rem 0;
+}
+#experience-section h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+#experience-section h5 {
+    font-weight: 700;
+    color: var(--light-font-color);
+}
+#experience-section .content {
+    margin: 0 1rem;
+}
+#experience-section .content p {
+    margin: 0.5rem 0;
+}
+#experience-section ul li {
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+#experience-section ul li .column {
+    margin: 0 0.45rem;
+}
+#experience-section .location {
+    font-size: 0.85rem;
+}
+#experience-section .location a {
+    margin-left: 10px;
+}
+#experience-section .location svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#experience-section .school-start {
+    margin: 2rem 0 0 0;
+}
+#abilities-section h3 {
+    font-size: 1.75rem;
+    margin: 2rem 0 0.5rem 0;
+}
+#abilities-section .content .abilities span{
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin: 0.5rem 0.75rem;
+}
+#contact-section .content {
+    font-size: 0.9em;
+    margin: 1.5rem 0;
+}
+.sectionNavbar{
+    visibility: hidden;
+}
+
+
+/* Small tablet styles */
+@media screen and (min-width: 620px) {
+
+}
+
+
+/* Large tablet and laptop styles */
+@media screen and (min-width: 960px) {
+    .section {
+        width: 80%;
+    }
+    #profile-section .column {
+        flex: 2;
+        margin: 10px;
+    }
+    #profile-section .row {
+        display: flex;
+        flex-direction: row;
+    }
+    #experience-section ul li {
+        flex-direction: row;
+    }
+    #contact-section .content {
+        flex-direction: row;
+        font-size: 0.9em;
+        margin: 1.5rem 0;
+    }
+    .sectionNavbar{
+        visibility: visible;
+        position: fixed;
+        top: 6rem;
+        right: 1rem;
+    }
+}
+
+
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
+    .sectionNavbar {
+        top: 7rem;
+        right: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
